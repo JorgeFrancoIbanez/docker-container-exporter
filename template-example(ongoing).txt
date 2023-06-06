@@ -1,0 +1,103 @@
+# HELP docker_container_memory_used_bytes Memory usage of a container.
+# TYPE docker_container_memory_used_bytes gauge
+docker_container_memory_used_bytes{name=""} 1841598464
+# HELP docker_probe_list_containers_duration_seconds How long it takes to query Docker for the list of containers. Includes failed requests.
+# TYPE docker_probe_list_containers_duration_seconds histogram
+docker_probe_list_containers_duration_seconds_sum 99.80295389999999
+docker_probe_list_containers_duration_seconds_count 3128
+docker_probe_list_containers_duration_seconds_bucket{le="0.5"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="0.75"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="1.125"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="1.6875"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="2.53125"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="3.796875"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="5.6953125"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="8.54296875"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="12.814453125"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="19.2216796875"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="28.83251953125"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="43.248779296875"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="64.8731689453125"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="97.30975341796875"} 3128
+docker_probe_list_containers_duration_seconds_bucket{le="+Inf"} 3128
+# HELP docker_probe_list_containers_failed_total How many times the attempt to list all containers has failed.
+# TYPE docker_probe_list_containers_failed_total counter
+docker_probe_list_containers_failed_total 0
+# HELP process_private_memory_bytes Process private memory size
+# TYPE process_private_memory_bytes gauge
+process_private_memory_bytes 2494775296
+# HELP process_open_handles Number of open handles
+# TYPE process_open_handles gauge
+process_open_handles 98
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1686033437.8
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 225.67
+# HELP dotnet_collection_count_total GC collection count
+# TYPE dotnet_collection_count_total counter
+dotnet_collection_count_total{generation="2"} 363
+dotnet_collection_count_total{generation="0"} 1908
+dotnet_collection_count_total{generation="1"} 1070
+# HELP docker_container_disk_write_bytes Total bytes written to disk by a container.
+# TYPE docker_container_disk_write_bytes gauge
+docker_container_disk_write_bytes{name=""} 0
+# HELP docker_probe_stats_duration_seconds How long it takes to query Docker for the resource usage of a single container. Includes failed requests.
+# TYPE docker_probe_stats_duration_seconds histogram
+docker_probe_stats_duration_seconds_sum 305757.16695970023
+docker_probe_stats_duration_seconds_count 137632
+docker_probe_stats_duration_seconds_bucket{le="0.5"} 0
+# HELP docker_container_network_out_bytes Total bytes sent by the container's network interfaces.
+# TYPE docker_container_network_out_bytes gauge
+docker_container_network_out_bytes{name=""} 0
+# HELP docker_probe_successfully_completed_time When the last Docker probe was successfully completed.
+# TYPE docker_probe_successfully_completed_time gauge
+docker_probe_successfully_completed_time 1686080338.6070344
+# HELP docker_probe_duration_seconds How long it takes to query Docker for the complete data set. Includes failed requests.
+# TYPE docker_probe_duration_seconds histogram
+docker_probe_duration_seconds_sum 7433.461577700004
+docker_probe_duration_seconds_count 3128
+docker_probe_duration_seconds_bucket{le="0.5"} 0
+# HELP docker_container_disk_read_bytes Total bytes read from disk by a container.
+# TYPE docker_container_disk_read_bytes gauge
+docker_container_disk_read_bytes{name=""} 0
+# HELP process_working_set_bytes Process working set
+# TYPE process_working_set_bytes gauge
+process_working_set_bytes 67977216
+# HELP docker_container_cpu_used_total Accumulated CPU usage of a container, in unspecified units, averaged for all logical CPUs usable by the container.
+# TYPE docker_container_cpu_used_total gauge
+docker_container_cpu_used_total{name=""} 4051140710106
+# HELP docker_container_cpu_capacity_total All potential CPU usage available to a container, in unspecified units, averaged for all logical CPUs usable by the container. Start point of measurement is undefined - only relative values should be used in analytics.
+# TYPE docker_container_cpu_capacity_total gauge
+docker_container_cpu_capacity_total{name=""} 83564618552904480
+# HELP docker_container_restart_count Number of times the runtime has restarted this container without explicit user action, since the container was last started.
+# TYPE docker_container_restart_count gauge
+docker_container_restart_count{name=""} 0
+# HELP docker_container_start_time_seconds Timestamp indicating when the container was started. Does not get reset by automatic restarts.
+# TYPE docker_container_start_time_seconds gauge
+docker_container_start_time_seconds{name=""} 1683303971.144621
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 2542338048
+# HELP docker_probe_inspect_duration_seconds How long it takes to query Docker for the basic information about a single container. Includes failed requests.
+# TYPE docker_probe_inspect_duration_seconds histogram
+docker_probe_inspect_duration_seconds_sum 270.5810266000015
+# HELP docker_probe_container_failed_total Number of times the exporter failed to collect information about a specific container.
+# TYPE docker_probe_container_failed_total counter
+docker_probe_container_failed_total{name=""} 0
+# HELP docker_container_running_state Whether the container is running (1), restarting (0.5) or stopped (0).
+# TYPE docker_container_running_state gauge
+docker_container_running_state{name=""} 1
+# HELP docker_containers Number of containers that exist.
+# TYPE docker_containers gauge
+docker_containers 44
+# HELP process_num_threads Total number of threads
+# TYPE process_num_threads gauge
+process_num_threads 34
+# HELP docker_container_network_in_bytes Total bytes received by the container's network interfaces.
+# TYPE docker_container_network_in_bytes gauge
+docker_container_network_in_bytes{name=""} 0
+# HELP dotnet_total_memory_bytes Total known allocated memory
+# TYPE dotnet_total_memory_bytes gauge
+dotnet_total_memory_bytes 24562800
