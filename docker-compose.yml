@@ -1,0 +1,17 @@
+# @Author: Jorge Franco Ibanez
+# @Date:   2023-06-06 14:08:29
+version: "2"
+services:
+  api:
+    image: jorgefrancoibanez/dockerpy-exporter
+    ports:
+        - "9417:9417"
+    volumes:
+      - /sys/fs/cgroup/memory/docker:/docker/memory
+      - /sys/fs/cgroup/blkio/docker:/docker/blkio 
+      - /sys/fs/cgroup/cpu/docker:/docker/cpu 
+      - /var/run/docker.sock:/var/run/docker.sock
+    privileged: true
+    container_name: dockerpy-exporter
+    environment:
+      - DOCKER_API_VERSION=1.41
